@@ -6,7 +6,7 @@ export const getAllRecettes = async (req, res) => {
         const recettes = await recupererToutesRecettes();
         res.status(200).json(recettes);
     } catch (error) {
-        res.status(500).json({ message: error.message });
+        res.status(500).json({ message: 'Pas de recette disponible' });
     }
 };
 
@@ -67,3 +67,9 @@ export const deleteRecette = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 };
+
+
+
+
+
+

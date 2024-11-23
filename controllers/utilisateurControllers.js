@@ -25,8 +25,8 @@ export const loginUser = async (req, res) => {
             return res.status(401).json({ message: 'Email ou mot de passe incorrect' });
         }
 
-        const token = jwt.sign({ id: utilisateur.id }, process.env.JWT_SECRET, { expiresIn: '1h' });
-        res.status(200).json({ token });
+        const token = jwt.sign({ id: utilisateur.id }, process.env.JWT_SECRET, { expiresIn: '3h' });
+        res.status(200).json({ 'Voici votre token : ' : token });
     } catch (error) {
         res.status(500).json({ message: error.message });
     }

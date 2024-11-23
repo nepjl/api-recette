@@ -18,6 +18,10 @@ app.use(express.urlencoded({ extended: true }))
 connexionDB()
 
 
+app.use('/api/acceuil/', (req, res) => {
+    res.status(200).send(`Bienvenue sur notre API.`);
+});
+
 app.use('/api/users', userRoutes);
 app.use('/api/recettes', recetteRoutes);
 
