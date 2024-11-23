@@ -1,10 +1,4 @@
-import { 
-    recupererToutesRecettes, 
-    recupererRecetteParId, 
-    ajouterRecette as ajouterRecetteModel, 
-    mettreAJourRecette, 
-    supprimerRecette 
-} from '../models/recette.js';
+import { recupererToutesRecettes,recupererRecetteParId, ajouterRecette as ajouterRecetteModel, mettreAJourRecette, supprimerRecette} from '../models/recette.js';
 
 // Récupérer toutes les recettes
 export const getAllRecettes = async (req, res) => {

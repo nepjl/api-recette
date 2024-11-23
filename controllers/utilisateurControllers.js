@@ -1,8 +1,4 @@
-import { 
-    creerUtilisateur, 
-    trouverUtilisateurParEmail, 
-    trouverUtilisateurParId 
-} from '../models/utilisateur.js';
+import { creerUtilisateur, trouverUtilisateurParEmail, trouverUtilisateurParId} from '../models/utilisateur.js';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 
